@@ -1,0 +1,15 @@
+# Dependências do Node
+node_modules/
+
+# Logs de erro do Node (caso algum script quebre e gere um log local)
+npm-debug.log
+yarn-error.log
+
+# Variáveis de ambiente (AQUI FICA A API KEY DO GEMINI, ELA NUNCA DEVE SUBIR PRO GITHUB)
+.env
+
+# Prints e arquivos gerados pelo seu script 
+# (pra não ficar subindo print de teste pro repositório)
+*.png
+*.pdf
+resultado.png

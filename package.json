@@ -1,0 +1,23 @@
+{
+  "name": "ava-automation",
+  "version": "1.0.0",
+  "description": "Automação web em Node.js com Playwright e integração à API do Gemini para navegação, scraping e resolução de atividades Uniube+.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoAlves117/AVA-AUTOMATION.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoAlves117/AVA-AUTOMATION/issues"
+  },
+  "homepage": "https://github.com/GustavoAlves117/AVA-AUTOMATION#readme",
+  "dependencies": {
+    "playwright": "^1.63.0"
+  }
+}
