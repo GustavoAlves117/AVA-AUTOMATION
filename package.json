@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/GustavoAlves117/AVA-AUTOMATION#readme",
   "dependencies": {
+    "@google/genai": "^2.22.0",
+    "dotenv": "^17.4.2",
     "playwright": "^1.63.0"
   }
 }

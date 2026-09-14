@@ -12,4 +12,3 @@ yarn-error.log
 # (pra não ficar subindo print de teste pro repositório)
 *.png
 *.pdf
-resultado.png
