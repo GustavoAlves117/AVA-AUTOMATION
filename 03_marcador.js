@@ -29,8 +29,14 @@ const { chromium } = require('playwright');
     await page.fill('#usuarioLogin', process.env.UNIUBE_USER);
     await page.fill('#senhaView', process.env.UNIUBE_SENHA);
     await page.click('.loginButton');
-    await page.waitForURL('https://sga.uniube.br/academico/cursos2.php?acesso=1');
-    await page.click('.cartaoCurso .btn');
+    try {
+        console.log("Verificando se há tela de seleção de curso...");
+        await page.waitForSelector('.cartaoCurso .btn', { timeout: 3000 });
+        await page.click('.cartaoCurso .btn');
+        console.log("Curso selecionado.");
+    } catch (error) {
+        console.log("Tela de seleção pulada pelo AVA. Seguindo direto para o painel...");
+    }
     await page.waitForURL('https://ava3.uniube.br/ava/1/destaques/');
     await page.goto('https://ava3.uniube.br/ava/1/cursos/');
     await page.waitForURL('https://ava3.uniube.br/ava/1/cursos/');
